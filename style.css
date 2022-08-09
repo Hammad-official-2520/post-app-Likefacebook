@@ -96,20 +96,21 @@ nav{
 }
 .main .container{
     display: grid;
-    grid-template-columns: 18vh auto 20vw;
+    grid-template-columns: auto auto 20vw;
     column-gap: 2rem;
     position: relative;
 }
 
-.leff{
+.left{
     margin-left: 2px;
+    width: auto !important;
 }
 
 .main .container .left{
     height: max-content;
     position: sticky;
     top: 5.4rem;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 .left .sidebar {
     margin-top: 1rem;
@@ -397,10 +398,10 @@ nav{
     position: fixed;
     background-attachment: fixed;
 }
-.right{
+/* .right{
     background-attachment: fixed;
     position: fixed;
-}
+} */
     
 .comment-box{
     width: 600px;
@@ -491,7 +492,11 @@ nav{
     text-align: left;
 }
 
-
+@media only screen and (max-width: 1400px) {
+    .sidebar h3 {
+      font-size: 15px;
+    }
+  }
 
 
 
