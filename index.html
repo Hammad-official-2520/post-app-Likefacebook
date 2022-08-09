@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e24fdbd7b8.js" crossorigin="anonymous"></script>
+<body>
+    
+    <!-------------------------- header ----------------------->
+    <nav >
+        <div class="container">
+        <h2 class="logo">Sprit</h2>
+        <div class="search_bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="my_search" type="search" placeholder="Search for creation, inspiration, and project">
+        </div>
+        <div class="create">
+            <label class="btn btn-primary" for="#">Create Post</label>
+            <div>
+                <img class="profile" src="./image/profile2.jpg" alt="">
+            </div>
+        </div>
+    </nav>
+<!--------------------------------- sidebar --------------------------->
+<div class="main">
+       <div class="container">
+        
+   
+           <!-- ------------------------ left ----------------------- -->
+           <div class="left">
+           
+                <div class="profile-div">
+                    <img  class="profile" src="./image/profile2.jpg" alt="">
+                    <a>Hammad Ahmed</a>
+                    <p class="text-muted">@hammad</p>
+                </div>
+        
+
+             <div class="sidebar">
+                    <a class="menu-item"><span><i class="fa-solid fa-house-user"></i></span><h3>Home</h3></a>
+                    <a class="menu-item"><span><i class="fa-solid fa-bell"></i></span><h3>Notification</h3></a>
+                    <a class="menu-item"><i class="fa-solid fa-message"></i></span><h3>Message</h3></a>
+                    <a class="menu-item"><span><i class="fa-solid fa-book-bookmark"></i></span><h3>Bookmarks</h3></a>
+                    <a class="menu-item"><span><i class="fa-solid fa-chart-simple"></i></span><h3>Analytics</h3></a>
+                    <a class="menu-item"><span><i class="fa-brands fa-themeisle"></i></span><h3>Theme</h3></a>
+                    <a class="menu-item"><span><i class="fa-solid fa-gear"></i></span><h3>Setting</h3></a>
+             </div>
+           </div>
+           <!-------------------------- middel ------------------------->
+           <div class="middel">
+            <div class="stories">
+                <div class="story"> 
+                        <img  class="profile photo" src="./image/profile2.jpg" alt="">
+                    <p class="name">Your Story</p>
+                </div>
+                <div class="story">
+                    <div>
+                        <img class="profile photo" src="./image/profile6.jpg" alt="">
+                    </div>
+                    <p class="name">Hamza Ansari</p>
+                </div>
+                <div class="story">
+                    <div>
+                        <img  class="profile photo" src="./image/profile5.jpg" alt="">
+                    </div>
+                    <p class="name">Hammad Ahmed</p>
+                </div>
+                <div class="story">
+                    <div>
+                        <img   class="profile  photo" src="./image/profile7.jpg" alt="">
+                    </div>
+                    <p class="name">Syed Muzammil</p>
+                </div>
+                <div class="story">
+                    <div>
+                        <img  class="profile  photo" src="./image/Profile.png" alt="">
+                    </div>
+                    <p class="name">Fawad Alam</p>
+                </div>
+                <div class="story">
+                    <div>
+                        <img  class="profile photo" src="./image/profile4.jpg" alt="">
+                    </div>
+                    <p class="name">Rizwan Ahmed</p>
+                </div>
+            </div>
+
+             
+                <form class="create-post">
+                    <div ><img  class="profile pro" src="./image/varun.png" alt=""></div>
+                    <input id="my-post" class="my_search"  type="text" placeholder="Whats on your mind, Hammad?">
+                    <label  onclick="comment()" class="btn btn-primary post" >Post</label>
+                </form>
+                <div id="commm">
+                    
+                </div>
+
+                <div class="feeds">
+                    <div class="user">
+                        <div class="saylani-profile"><img class="profile" src="./image/saylani-logo.png" alt=""> <h3>Saylani Welfare International Trust </h3><i id="menu-bar" class="fa-solid fa-ellipsis"></i></div>
+                       
+                        <div><p>You can Save someone's life <br>
+                            For Online Donations <br>
+                            <a target="_blank" href="https://saylaniwelfare.com/en/donate?referer=fb-Rowaterplantfilter&fbclid=IwAR0NjrVtD8t8u1IWMts0_J9NvfpJYHf4aa9XWvo1lPtx-IjsrnXye_k0im0">https://saylaniwelfare.com/en/donate... </a><br>
+                            Call UAN: +92-21-111-729-526 | +923111729526</p></div>
+                </div>
+
+                <div ><img class="posting" src="./image/blood.jpg" alt=""></div>
+
+                <div class="comment">
+                    <div><i class="fa-solid fa-thumbs-up"></i> <a>Like</a></div>
+                    <div><i class="fa-solid fa-message"></i><a target="_self">Comment</a></div>
+                    <div><i class="fa-solid fa-share"></i><a>Share</a></div>
+                </div>
+                   <div id="box">
+                    <form class="create-post">
+                        <div ><img  class="profile pro" src="./image/elon.jpg" alt=""></div>
+                        <input id="my" maxlength="60" class="my_search"  type="text" placeholder="Whats on your mind, Elon?">
+                        <label onclick="comment2()" class="btn btn-primary post">Comment</label>
+                    </form>
+                    <div id="com-y">
+                        
+                    </div>
+                   </div>
+            </div>
+
+              
+           </div>
+           <!-------------------------- right ------------------------->
+           <div class="right">
+              <div class="message">
+                <div class="heading">
+                    <h4>Messages</h4><i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <div class="search_bar"><i class="fa-solid fa-magnifying-glass"></i>
+                <input  id="message-search" type="search" placeholder="Search Messages"></div>
+                
+                    <div class="catageory">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="messages-request">Request(7)</h6>
+                    </div>
+                    
+                <div class="pop-message">
+                    <div >
+                        <img class="profile" src="./image/elon.jpg" alt="">
+                    </div>
+                  <div class="message-body">
+                    <h5>Elon Musk</h5>
+                    <p>There is no one!</p>
+                  </div>
+                </div>
+                                    
+                <div class="pop-message">
+                    <div >
+                        <img class="profile" src="./image/gates-bill.jpg" alt="">
+                    </div>
+                  <div class="message-body">
+                    <h5>BILL Gates</h5>
+                    <p>Recived bruh. Thanks!!</p>
+                  </div>
+                </div>
+                                    
+                <div class="pop-message">
+                    <div >
+                        <img class="profile " src="./image/hobby.jpg" alt="">
+                    </div>
+                  <div class="message-body">
+                    <h5>Angeel Lina</h5>
+                    <p>ok</p>
+                  </div>
+                </div>
+                                    
+                <div class="pop-message">
+                    <div >
+                        <img class="profile" src="./image/varun.png" alt="">
+                    </div>
+                  <div class="message-body">
+                    <h5>Varun Singh</h5>
+                    <p>lol you right</p>
+                  </div>
+                </div>
+                                    
+                <div class="pop-message">
+                    <div >
+                        <img class="profile " src="./image/latif.jpg" alt="">
+                    </div>
+                  <div class="message-body">
+                    <h5>Latif Ahmed</h5>
+                    <p>Birthday Tomorrow!</p>
+                  </div>
+                </div>
+                                    
+                <div class="pop-message">
+                    <div >
+                        <img class="profile" src="./image/khan.jpg" alt="">
+                    </div>
+                  <div class="message-body">
+                    <h5>Abrar Khan</h5>
+                    <p>2 new messages</p>
+                  </div>
+                </div>
+        </div>
+        <div class="friend-request">
+            <p>Request</p>
+            <div class="request">
+                <div class="info">
+                    <div >
+                        <img class="profile" src="./image/elon.jpg" >
+                    </div>
+                    <div> 
+                        <h4>Fawad Alam</h4>
+                        <p class="muted-text">8 mutual friend</p>
+                    </div>
+                </div>
+
+                <div class="action">
+                    <button class="btn btn-primary">Aceept</button>
+                    <button class="btn">Decline</button>
+                  </div>
+               </div>
+               <div class="request">
+                <div class="info">
+                    <div >
+                        <img class="profile" src="./image/request.jpeg" >
+                    </div>
+                    <div> 
+                        <h4>Eliza Jacks</h4>
+                        <p class="muted-text">2 mutual friend</p>
+                    </div>
+                </div>
+
+                <div class="action">
+                    <button class="btn btn-primary">Aceept</button>
+                    <button class="btn">Decline</button>
+                  </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
